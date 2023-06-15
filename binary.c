@@ -1,3 +1,5 @@
+// By Amit Kumar Sahoo
+
 #include<stdio.h>
 #define max 50
 int top=-1;
