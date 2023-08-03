@@ -5,16 +5,16 @@
 char stack[SIZE];
 int top=-1;
 void push(int);
-char pop();
+int pop();
 void traverse();
 main()
 {
 int ch;
-char x;
-printf("####***** MENU *****####\n");
-printf("1.PUSH\n2.POP\n3.TRAVERSE\n4.EXIT\n");
+int x;
 while(1)
 {
+printf("####***** MENU *****####\n");
+printf("1.PUSH\n2.POP\n3.TRAVERSE\n4.EXIT\n");
 printf("Enter your choice\n");
 scanf("%d",&ch);
 switch(ch)
@@ -51,7 +51,7 @@ top=top+1;
 stack[top]=c;
 }
 }
-char pop()
+int pop()
 {
 if(top==-1)
 {
@@ -66,7 +66,7 @@ void traverse()
     int i=top;
     while(i>=0)
     {
-        printf("%c\n",stack[i]);
+        printf("%d\n",stack[i]);
         i--;
     }
 }
